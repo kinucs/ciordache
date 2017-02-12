@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name": "Ciodache",
+	"version": "1.0",
+	"description": "Chrome extension that replaces occurrences of 'Florin Iordache' with 'Ciordache'",
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
